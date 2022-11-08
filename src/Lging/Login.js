@@ -5,6 +5,9 @@ import { AuthContext } from '../Context/AuthProvider';
 
 const Login = () => {
     const {signin,signGoogle} = useContext(AuthContext)
+    const navigate = useNavigate()
+    const location  = useLocation();
+    const from = location.state?.from?.pathname || '/';
     const handelLogin = event=>{
         event.preventDefault()
         const form = event.target;
@@ -13,6 +16,7 @@ const Login = () => {
         signin(email,password)
         .then(result=>{
             const user = result.user
+            navigate(from,{replace:true})
             console.log(user)
             toast.dark('successfullay login!',{autoClose:500})
         })
@@ -27,6 +31,7 @@ const Login = () => {
 
         })
         .catch(error => toast.error(error.message))
+        toast.error('error message!',{autoClose:500})
         //  github singin 
         
        
