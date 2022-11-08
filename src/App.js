@@ -5,6 +5,7 @@ import Main from './Layout/Main';
 import Home from './Home/Home';
 import Login from './Lging/Login';
 import Sigin from './Sigin/Sigin';
+import Banner from './Banner/Banner';
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +24,10 @@ function App() {
         {
           path:'/sigin',
           element:<Sigin></Sigin>,
+        },
+        {
+          path:'/banner',
+          element:<Banner></Banner>,
         },
       ]
 

@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthProvider';
 
 const Sigin = () => {
+    const {createUser}=createContext(AuthContext)
+
+    const handleSubmit = event => {
+    }
     return (
         <div>
           
