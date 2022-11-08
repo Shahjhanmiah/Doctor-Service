@@ -1,13 +1,13 @@
 [
     {
         "name":"Doctor",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzhz76QThNuGT3h7moRnURC-O7kCgeCYBCzfZjX3oT0Okw4pEwutLySsAaO7qXnym5ieQ&usqp=CAU",
+        "img":"https://img.collegedekhocdn.com/media/img/careers/doctor-clinic.jpg",
         "price":500,
         "short-description":"If you cannot reach your primary care physicianIf you need a short-term prescription refillIf you have young children and are unable to see a doctorIf it’s after your doctors normal business hours"
     },
     {
         "name":"scientist",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYOoEAdetiSe9JpoGEU4iVRFqQhFFke_M5-uEdnl4f8yOc4kqaNn4rpSnAkBSS6HuPa8&usqp=CAU",
+        "img":"https://static.vecteezy.com/system/resources/thumbnails/004/409/864/small/scientist-woman-in-lab-coat-holding-beaker-glass-analyzing-free-vector.jpg",
         "price":500,
         "short-description":"Who is a scientist? A scientist is a professional who conducts and gathers research to further knowledge in a particular area. Scientists may make hypotheses, test them through various means such as statistics and data and formulate conclusions based on the evidence "
        
@@ -21,21 +21,21 @@
     },
     {
         "name":"Doctor-certificate",
-        "img":"https://media.istockphoto.com/id/1191968415/vector/medical-form-medical-report-characters-clipboard-with-a-cross-pen-and-check-marks-informed.jpg?s=612x612&w=0&k=20&c=aw7dHmyCBs5almA",
+        "img":"https://png.pngtree.com/png-vector/20201225/ourlarge/pngtree-online-medical-health-consultation-doctor-vector-illustration-pattern-element-png-image_2608104.jpg",
         "price":500,
         "short-description":"We hook you up with thousands of professionally designed templates, so you're never starting from a blank canvas. Search by platform, task, aesthetic, mood, or color to have fresh inspiration at your fingertips; once you find a graphic to start from, tap or click to open the document in the editor. There are lots of ways to personalize your medical certificate templates. Change up the copy and font—Sub out the imagery with your photos. Or browse from thousands of free images right in Adobe Express. Spend as little or as much time as you want to make the graphic your own. With a premium plan, you can even auto-apply your brand logo, colors, and fonts, so you're always #onbran"
            
     },
     {
         "name":"Doctor-viedocall",
-        "img":"https://media.istockphoto.com/vectors/five-doctors-attending-a-video-conference-or-one-senior-clinician-vector-id1335115791?k=20&m=1335115791&s=170667a&w=0&h=gLw0ZUKPF9XTwJUtchm8-oC",
+        "img":"https://cdn1.vectorstock.com/i/1000x1000/16/90/phone-video-call-to-doctor-vector-30361690.jpg",
         "price":500,
         "short-description":"Telehealth — also known as virtual care, telemedicine and video visits — is a convenient way to connect with your doctor or another care provider from the comfort of your home or while you're on the go."
            
     },
     {
-        "name":"Doctor-viedocall",
-        "img":"https://media.istockphoto.com/vectors/five-doctors-attending-a-video-conference-or-one-senior-clinician-vector-id1335115791?k=20&m=1335115791&s=170667a&w=0&h=gLw0ZUKPF9XTwJUtchm8-oC",
+        "name":"Doctor-Clean",
+        "img":"https://lethbridgecollege.ca/sites/default/files/2021-05/Whittney-opt.jpg",
         "price":500,
         "short-description":"Telehealth — also known as virtual care, telemedicine and video visits — is a convenient way to connect with your doctor or another care provider from the comfort of your home or while you're on the go."
            

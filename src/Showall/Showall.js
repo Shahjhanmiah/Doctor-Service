@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import ServiceCard from '../ServiceCard/ServiceCard';
+import ServiceShowAll from '../ServiceShowAll/ServiceShowAll';
 
-const Service = () => {
 
-    const [service,Setservice]=useState([])
+const Showall = () => {
+ 
+    const [service,Setservices]=useState([])
+
     useEffect(()=>{
         fetch('http://localhost:5000/service')
         .then(res =>res.json())
-        .then(data =>Setservice(data))
+        .then(data =>Setservices(data))
     },[])
-    const handleshow=()=>{
-        console.log('click')
-
-    }
+   
+   
     return (
         <div>
             <div className='text-center mb-4'>
@@ -20,15 +20,15 @@ const Service = () => {
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-20 my-20'>
                 {
-                    service.map(service=><ServiceCard key={service._id} service={service}
-                    handleshow={handleshow}>
+                    service.map(service=><ServiceShowAll key={service._id}
+                    service={service}>
 
-                    </ServiceCard>)
+                    </ServiceShowAll>)
                 }
-              
             </div>
         </div>
+          
     );
 };
 
-export default Service;
+export default Showall;

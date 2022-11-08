@@ -6,6 +6,8 @@ import Home from './Home/Home';
 import Login from './Lging/Login';
 import Sigin from './Sigin/Sigin';
 import Banner from './Banner/Banner';
+import Showall from './Showall/Showall';
+import ServiceShowAll from './ServiceShowAll/ServiceShowAll';
 
 function App() {
   const router = createBrowserRouter([
@@ -28,6 +30,14 @@ function App() {
         {
           path:'/banner',
           element:<Banner></Banner>,
+        },
+        {
+          path:'/showall',
+          element:<Showall></Showall>,
+        },
+        {
+          path:'/serviceShowall',
+          element:<ServiceShowAll></ServiceShowAll>,
         },
       ]
 

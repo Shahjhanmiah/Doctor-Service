@@ -10,14 +10,14 @@ const Banner = () => {
         <div>
             <div className="carousel w-full h-80 bg-slate-700 rounded-xl  my-5">
   <div id="slide1" className="carousel-item relative w-full">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzhz76QThNuGT3h7moRnURC-O7kCgeCYBCzfZjX3oT0Okw4pEwutLySsAaO7qXnym5ieQ&usqp=CAU" className="w-full" />
+    <img src="https://img.collegedekhocdn.com/media/img/careers/doctor-clinic.jpg" className="w-full h-50" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide4" className="btn btn-circle">❮</a> 
       <a href="#slide2" className="btn btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide2" className="carousel-item relative w-full">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyYOoEAdetiSe9JpoGEU4iVRFqQhFFke_M5-uEdnl4f8yOc4kqaNn4rpSnAkBSS6HuPa8&usqp=CAU" className="w-full" />
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/004/409/864/small/scientist-woman-in-lab-coat-holding-beaker-glass-analyzing-free-vector.jpg" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide1" className="btn btn-circle">❮</a> 
       <a href="#slide3" className="btn btn-circle">❯</a>
@@ -38,7 +38,7 @@ const Banner = () => {
     </div>
   </div>
   <div id="slide5" className="carousel-item relative w-full">
-    <img src="https://media.istockphoto.com/vectors/five-doctors-attending-a-video-conference-or-one-senior-clinician-vector-id1335115791?k=20&m=1335115791&s=170667a&w=0&h=gLw0ZUKPF9XTwJUtchm8-oC" className="w-full" />
+    <img src="https://lethbridgecollege.ca/sites/default/files/2021-05/Whittney-opt.jpg" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide3" className="btn btn-circle">❮</a> 
       <a href="#slide1" className="btn btn-circle">❯</a>
