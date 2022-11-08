@@ -1,38 +1,65 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { AuthContext } from '../Context/AuthProvider';
 
 const Login = () => {
-    return (
-        <div>
-          
-<div class="p-4 w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 m-auto my-28 bg-slate-700">
-    <form class="space-y-6" action="#">
-       
-        <div>
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-orange-600">Your email</label>
-            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white " placeholder="name@company.com" required=""/>
-        </div>
-        <div>
-            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text-orange-600 rounded-xl ">Your password</label>
-            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required=""/>
-        </div>
-        <div class="flex items-start">
-            <div class="flex items-start">
-                <div class="flex items-center h-5">
-                    <input id="remember" type="checkbox" value="" class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required=""/>
-                </div>
-            </div>
-            <Link to='/sigin'>
-            <div href="#" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">CreateAccount</div>
-            </Link>
-        </div>
-        <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  bg-lime-800 rounded-xl">Login</button>
-        <br></br>
-        <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 bg-amber-400 rounded-xl">Google</button>
-    </form>
-</div>
+    const {signin,signGoogle} = useContext(AuthContext)
+    const handelLogin = event=>{
+        event.preventDefault()
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        signin(email,password)
+        .then(result=>{
+            const user = result.user
+            console.log(user)
+            toast.dark('successfullay login!',{autoClose:500})
+        })
+        .catch(error=>console.log(error))
 
+    }
+    const handelGoogleSign=()=>{
+        signGoogle()
+        .then(result=>{
+            console.log(result.user);
+            toast.dark('successfullay login!',{autoClose:500})
+
+        })
+        .catch(error => toast.error(error.message))
+        //  github singin 
+        
+       
+    }
+    return (
+        <div className="hero w-full my-20">
+        <div className="hero-content grid gap-10 md:grid-cols-2 flex-col lg:flex-row">
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-10 bg-slate-600">
+            <form onSubmit={handelLogin } className="card-body">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input type="text" name='email' placeholder=" You email" className="input input-bordered" required />
+            
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Password</span>
+                </label>
+                <input type="password" name='password' placeholder="Your Password" className="input input-bordered"required />
+            
+              </div>
+              <div className="form-control mt-6">
+                  <input className="btn btn-warning" type="submit" value="Login"></input>
+              
+              </div>
+              <button onClick={handelGoogleSign} type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> <span className='caret-emerald-900 gap-4'><i class="fa-brands fa-google "></i></span> Google your account</button>
+            </form>
+            <p className='text-center text-bottom-4'>Already haven an accout  <Link className='text-orange-600' to='/sigin'>Login</Link></p>
+          </div>
         </div>
+      </div>
     );
 };
 

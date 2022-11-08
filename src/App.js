@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Layout/Main';
 import Home from './Home/Home';
 import Login from './Lging/Login';
-import Sigin from './Sigin/Sigin';
+import Sigin from './Sigin/Singin';
 import Banner from './Banner/Banner';
 import Showall from './Showall/Showall';
 import ServiceShowAll from './ServiceShowAll/ServiceShowAll';
@@ -25,6 +25,10 @@ function App() {
         {
           path:'/login',
           element:<Login></Login>,
+        },
+        {
+          path:'/sigin',
+          element:<Sigin></Sigin>,
         },
         {
           path:'/sigin',
