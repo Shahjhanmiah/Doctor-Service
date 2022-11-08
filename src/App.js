@@ -8,6 +8,9 @@ import Sigin from './Sigin/Sigin';
 import Banner from './Banner/Banner';
 import Showall from './Showall/Showall';
 import ServiceShowAll from './ServiceShowAll/ServiceShowAll';
+import ServiceCardes from './ServiceCardes/ServiceCardes';
+import AddService from './AddService/AddService';
+import ServiceDetails from './ServiceDetails/ServiceDetails';
 
 function App() {
   const router = createBrowserRouter([
@@ -38,6 +41,20 @@ function App() {
         {
           path:'/serviceShowall',
           element:<ServiceShowAll></ServiceShowAll>,
+        },
+        {
+          path:'/serviceCardes',
+          element:<ServiceCardes></ServiceCardes>,
+        },
+        {
+          path:'/servicedetails/:id',
+          element:<ServiceDetails></ServiceDetails>,
+          loader:({params})=> fetch(`http://localhost:5000/Service/${params.id}`)
+        },
+        {
+          path:'/Addservice/:id',
+          element:<AddService></AddService>,
+          loader:({params})=> fetch(`http://localhost:5000/Service/${params.id}`)
         },
       ]
 

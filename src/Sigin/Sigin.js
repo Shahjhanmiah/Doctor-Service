@@ -1,16 +1,14 @@
-import React, { createContext } from 'react';
+import React, {  useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../Context/AuthProvider';
+
 
 const Sigin = () => {
-    const {createUser}=createContext(AuthContext)
 
-    const handleSubmit = event => {
-    }
+    
     return (
         <div>
           
-        <div class="p-4 w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 m-auto my-28 bg-slate-700">
+        <form class="p-4 w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 m-auto my-28 bg-slate-700">
             <form class="space-y-6" action="#">
                
                 <div>
@@ -38,7 +36,7 @@ const Sigin = () => {
                 <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800  bg-lime-800 rounded-xl">Sigin</button>
 
             </form>
-        </div>
+        </form>
         
                 </div>
     );

@@ -3,27 +3,27 @@
         "name":"Doctor",
         "img":"https://img.collegedekhocdn.com/media/img/careers/doctor-clinic.jpg",
         "price":500,
-        "short-description":"If you cannot reach your primary care physicianIf you need a short-term prescription refillIf you have young children and are unable to see a doctorIf it’s after your doctors normal business hours"
+        "short_description":"If you cannot reach your primary care physicianIf you need a short-term prescription refillIf you have young children and are unable to see a doctorIf it’s after your doctors normal business hours"
     },
     {
         "name":"scientist",
         "img":"https://static.vecteezy.com/system/resources/thumbnails/004/409/864/small/scientist-woman-in-lab-coat-holding-beaker-glass-analyzing-free-vector.jpg",
         "price":500,
-        "short-description":"Who is a scientist? A scientist is a professional who conducts and gathers research to further knowledge in a particular area. Scientists may make hypotheses, test them through various means such as statistics and data and formulate conclusions based on the evidence "
+        "short_description":"Who is a scientist? A scientist is a professional who conducts and gathers research to further knowledge in a particular area. Scientists may make hypotheses, test them through various means such as statistics and data and formulate conclusions based on the evidence "
        
     },
     {
         "name":"Madichine",
         "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3zCLb6TWXipl1SaxBvxCIA0tflkQQM2i7SMQKEdgf0-6nt_mE_ymoQIG583PgIbX1tM&usqp=CAU",
         "price":500,
-        "short-description":" With our Doctor of Medicine you can study regionally and be at the cutting edge of the future of medicine in Australia. The continuing shortage of doctors in rural and remote areas is central to Australia’s rural health crisis. You can help address this regional "
+        "short_description":" With our Doctor of Medicine you can study regionally and be at the cutting edge of the future of medicine in Australia. The continuing shortage of doctors in rural and remote areas is central to Australia’s rural health crisis. You can help address this regional "
        
     },
     {
         "name":"Doctor-certificate",
         "img":"https://png.pngtree.com/png-vector/20201225/ourlarge/pngtree-online-medical-health-consultation-doctor-vector-illustration-pattern-element-png-image_2608104.jpg",
         "price":500,
-        "short-description":"We hook you up with thousands of professionally designed templates, so you're never starting from a blank canvas. Search by platform, task, aesthetic, mood, or color to have fresh inspiration at your fingertips; once you find a graphic to start from, tap or click to open the document in the editor. There are lots of ways to personalize your medical certificate templates. Change up the copy and font—Sub out the imagery with your photos. Or browse from thousands of free images right in Adobe Express. Spend as little or as much time as you want to make the graphic your own. With a premium plan, you can even auto-apply your brand logo, colors, and fonts, so you're always #onbran"
+        "short_description":"We hook you up with thousands of professionally designed templates, so you're never starting from a blank canvas. Search by platform, task, aesthetic, mood, or color to have fresh inspiration at your fingertips; once you find a graphic to start from, tap or click to open the document in the editor. There are lots of ways to personalize your medical certificate templates. Change up the copy and font—Sub out the imagery with your photos. Or browse from thousands of free images right in Adobe Express. Spend as little or as much time as you want to make the graphic your own. With a premium plan, you can even auto-apply your brand logo, colors, and fonts, so you're always #onbran"
            
     },
     {
@@ -37,7 +37,7 @@
         "name":"Doctor-Clean",
         "img":"https://lethbridgecollege.ca/sites/default/files/2021-05/Whittney-opt.jpg",
         "price":500,
-        "short-description":"Telehealth — also known as virtual care, telemedicine and video visits — is a convenient way to connect with your doctor or another care provider from the comfort of your home or while you're on the go."
+        "short_description":"Telehealth — also known as virtual care, telemedicine and video visits — is a convenient way to connect with your doctor or another care provider from the comfort of your home or while you're on the go."
            
     }
 ]

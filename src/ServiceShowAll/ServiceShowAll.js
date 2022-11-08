@@ -3,7 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 
 const ServiceShowAll = ({service}) => {
 
-    const {img,name} = service
+    const {img,name,_id} = service
    
 
     return (
@@ -14,7 +14,7 @@ const ServiceShowAll = ({service}) => {
                 <h2 className="card-title">{name}</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                 <Link to=''>
+                 <Link to={`/Addservice/${_id}`}>
                  <button className="btn btn-primary">ShowAll</button>
                  </Link>
                 </div>

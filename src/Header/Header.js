@@ -17,6 +17,10 @@ const Header = () => {
      <Link to='/login'>
      <li><a>Login</a></li>
      </Link>
+
+     <Link to='/Addservice'>
+     <li><a>AddService</a></li>
+     </Link>
         <li tabIndex={0}>
           <a className="justify-between">
             Parent
@@ -38,6 +42,10 @@ const Header = () => {
      </Link>
      <Link to='/login'>
      <li><a>Login</a></li>
+     </Link>
+
+     <Link to='/Addservice'>
+     <li><a>AddService</a></li>
      </Link>
       <li tabIndex={0}>
         <a>

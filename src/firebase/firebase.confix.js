@@ -5,15 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA8c25-s8ZrtFT9JoGlyhiCAiCUMF64bGE",
-  authDomain: "our-doctor-service.firebaseapp.com",
-  projectId: "our-doctor-service",
-  storageBucket: "our-doctor-service.appspot.com",
-  messagingSenderId: "678545885040",
-  appId: "1:678545885040:web:a152801e3461fb385fb1b5"
+  apiKey: "AIzaSyB3NDrLAxOVMNdT5mH6D4QXC12kljpvaP0",
+  authDomain: "doctor-service-45010.firebaseapp.com",
+  projectId: "doctor-service-45010",
+  storageBucket: "doctor-service-45010.appspot.com",
+  messagingSenderId: "283316180008",
+  appId: "1:283316180008:web:ddf2beaef213ba38d6d11d"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-export default app
+export default app;
