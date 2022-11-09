@@ -14,7 +14,7 @@ const ServiceShowAll = ({service}) => {
                 <h2 className="card-title">{name}</h2>
                 <p>If a dog chews shoes whose shoes does he choose?</p>
                 <div className="card-actions justify-end">
-                 <Link to={`/Addservice/${_id}`}>
+                 <Link to={`/addservice/${_id}`}>
                  <button className="btn btn-primary">ShowAll</button>
                  </Link>
                 </div>

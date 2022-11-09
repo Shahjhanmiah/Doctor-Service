@@ -11,6 +11,8 @@ import ServiceShowAll from './ServiceShowAll/ServiceShowAll';
 import ServiceCardes from './ServiceCardes/ServiceCardes';
 import AddService from './AddService/AddService';
 import ServiceDetails from './ServiceDetails/ServiceDetails';
+import PrivateRoute from './Private/PrivateRoute';
+import Blog from './Blog/Blog';
 
 function App() {
   const router = createBrowserRouter([
@@ -51,13 +53,17 @@ function App() {
           element:<ServiceCardes></ServiceCardes>,
         },
         {
+          path:'/blog',
+          element:<Blog></Blog>,
+        },
+        {
           path:'/servicedetails/:id',
           element:<ServiceDetails></ServiceDetails>,
           loader:({params})=> fetch(`http://localhost:5000/Service/${params.id}`)
         },
         {
-          path:'/Addservice/:id',
-          element:<AddService></AddService>,
+          path:'/addservice/:id',
+          element:<PrivateRoute><AddService></AddService></PrivateRoute>,
           loader:({params})=> fetch(`http://localhost:5000/Service/${params.id}`)
         },
       ]

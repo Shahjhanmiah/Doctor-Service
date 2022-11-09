@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import Section1 from '../Section1/Section1';
 import Service from '../Service/Service';
+import './Home.css'
 
 const Home = () => {
     return (

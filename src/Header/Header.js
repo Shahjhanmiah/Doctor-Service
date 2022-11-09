@@ -21,11 +21,10 @@ const Header = () => {
      <Link to='/Addservice'>
      <li><a>AddService</a></li>
      </Link>
+     <Link to='/blog'>
+     <li><a>Blog</a></li>
+     </Link>
         <li tabIndex={0}>
-          <a className="justify-between">
-            Parent
-            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-          </a>
           <ul className="p-2">
             
           </ul>
@@ -46,6 +45,9 @@ const Header = () => {
 
      <Link to='/Addservice'>
      <li><a>AddService</a></li>
+     </Link>
+     <Link to='/blog'>
+     <li><a>Blog</a></li>
      </Link>
       <li tabIndex={0}>
         <a>
