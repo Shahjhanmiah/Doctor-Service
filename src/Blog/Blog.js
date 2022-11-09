@@ -3,6 +3,12 @@ import React from 'react';
 const Blog = () => {
   return (
     <div>
+
+
+      <p class="mb-3 font-light text-gray-500 dark:text-gray-400">
+        <h1 className='text-3xl'>Difference between SQL and NoSQL</h1>
+        <p className='text-2xl text-green-300'>SQL is the programming language used to interface with relational databases. (Relational databases model data as records in rows and tables with logical links between them). NoSQL is a class of DBMs that are non-relational and generally do not use SQL.</p>
+       </p>
       
 
 
