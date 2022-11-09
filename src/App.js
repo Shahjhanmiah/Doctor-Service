@@ -13,12 +13,14 @@ import AddService from './AddService/AddService';
 import ServiceDetails from './ServiceDetails/ServiceDetails';
 import PrivateRoute from './Private/PrivateRoute';
 import Blog from './Blog/Blog';
+import Errorpage from './Errorpage/Errorpage';
 
 function App() {
   const router = createBrowserRouter([
     {
       path:'/',
       element:<Main></Main>,
+      errorElement:<Errorpage></Errorpage>,
       children:[
         {
           path:'/home',
