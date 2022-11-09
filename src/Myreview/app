@@ -1,0 +1,66 @@
+[
+    {
+       "name":"Doctor",
+       "email":"raju@gmail.com",
+       "service":"Doctor",
+       "data"   :"11.9.2022",
+       "time"   :3.00,
+       "price"  :500,
+       "img":"https://img.collegedekhocdn.com/media/img/careers/doctor-clinic.jpg"
+
+
+    },
+    {
+       "name":"Scientst",
+       "email":"saju@gmail.com",
+       "service":"Scientst",
+       "data"   :"11.9.2022",
+       "time"   :3.00,
+       "price"  :500,
+       "img":"https://static.vecteezy.com/system/resources/thumbnails/004/409/864/small/scientist-woman-in-lab-coat-holding-beaker-glass-analyzing-free-vector.jpg"
+
+
+    },
+    {
+       "name":"medichn",
+       "email":"shahjhan@gmail.com",
+       "service":"medicin",
+       "data"   :"11.9.2022",
+       "time"   :3.00,
+       "price"  :500,
+       "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3zCLb6TWXipl1SaxBvxCIA0tflkQQM2i7SMQKEdgf0-6nt_mE_ymoQIG583PgIbX1tM&usqp=CAU"
+
+
+    },
+    {
+       "name":"Doctor-certificate",
+       "email":"shahjhan@gmail.com",
+       "service":"medicin",
+       "data"   :"11.9.2022",
+       "time"   :3.00,
+       "price"  :500,
+       "img":"https://png.pngtree.com/png-vector/20201225/ourlarge/pngtree-online-medical-health-consultation-doctor-vector-illustration-pattern-element-png-image_2608104.jpg"
+
+       
+
+    },
+    {
+       "name":"Doctor-viedocall",
+       "email":"shahjhan@gmail.com",
+       "service":"medicin",
+       "data"   :"11.9.2022",
+       "time"   :3.00,
+       "price"  :500,
+       "img":"https://cdn1.vectorstock.com/i/1000x1000/16/90/phone-video-call-to-doctor-vector-30361690.jpg"
+    },
+    {
+       "name":"Doctor-Clean",
+       "email":"shahjhan@gmail.com",
+       "service":"medicin",
+       "data"   :"11.9.2022",
+       "time"   :3.00,
+       "price"  :500,
+       "img":"https://lethbridgecollege.ca/sites/default/files/2021-05/Whittney-opt.jpg"
+
+    }
+]

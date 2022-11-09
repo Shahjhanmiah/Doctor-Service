@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { AuthContext } from '../Context/AuthProvider';
 
 const ServiceDetails = () => {
-    const {_id,img,price} =useLoaderData()
+    const {_id,img,price,data,time} =useLoaderData()
+    const { user } = useContext(AuthContext);
+
 
     const handleshow = event=>{
         event.preventDefault();
         const form = event.target;
         const name = form.name.for
+        const email = user?.email || 'unregistered';
         const message = form.message.value;
         const img = form.img.value
 
@@ -20,12 +25,13 @@ const ServiceDetails = () => {
             service: name,
             
             
+            
         }
 
         fetch('http://localhost:5000/Orders', {
             method: 'POST',
             headers: {
-                'content-type': 'application/json'
+                'content-type':'application/json'
             },
             body: JSON.stringify(order)
         })
@@ -33,7 +39,7 @@ const ServiceDetails = () => {
             .then(data => {
                 console.log(data)
                 if(data.acknowledged){
-                    alert('Order placed successfully')
+                    toast.success('acknowledged ture!',{autoClose:500})
                     form.reset();
                     
                 }
@@ -51,11 +57,10 @@ const ServiceDetails = () => {
                     <input name="img" type="text" placeholder="img" className="input input-ghost w-full  input-bordered" />
                     <input name="service"  type="text" placeholder="service" className="input input-ghost w-full  input-bordered" required />
                     <input name="price" type="text" placeholder="price" className="input input-ghost w-full  input-bordered" required />
-                    <input name="email" type="text" placeholder="Your email" defaultValue className="input input-ghost w-full  input-bordered" readOnly />
+                    <input name="email" type="text" placeholder="Your email" defaultValue={user?.email} className="input input-ghost w-full  input-bordered" readOnly />
                 </div>
                 <textarea name="message" className="textarea textarea-bordered h-24 w-full bg-green-500 " placeholder="Your Message" required></textarea>
-
-                <input className='bg-orange-400 w-50 h-50'  type="submit" value="Place Your Service" />
+                <button type="submit" class="w-50 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> ServiceDetails</button>
             </form>
         </div>
             

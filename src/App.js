@@ -14,6 +14,7 @@ import ServiceDetails from './ServiceDetails/ServiceDetails';
 import PrivateRoute from './Private/PrivateRoute';
 import Blog from './Blog/Blog';
 import Errorpage from './Errorpage/Errorpage';
+import Myreview from './Myreview/Myreview';
 
 function App() {
   const router = createBrowserRouter([
@@ -59,9 +60,14 @@ function App() {
           element:<Blog></Blog>,
         },
         {
-          path:'/servicedetails/:id',
+          path:'/myreview',
+          element:<Myreview></Myreview>,
+          loader:()=> fetch("http://localhost:5000/Service")
+        },
+        {
+          path:'/servicedetails',
           element:<ServiceDetails></ServiceDetails>,
-          loader:({params})=> fetch(`http://localhost:5000/Service/${params.id}`)
+          loader:()=> fetch("http://localhost:5000/Service")
         },
         {
           path:'/addservice/:id',
