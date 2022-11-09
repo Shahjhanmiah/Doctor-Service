@@ -2,17 +2,30 @@ import React, { createContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../Context/AuthProvider';
+import useTitle from '../hooks/useTitle';
 import ReviewAdd from '../ReviewAdd/ReviewAdd';
 
 const Myreview = () => {
+    useTitle('Myreview')
     const service = useLoaderData()
     const {user} = createContext(AuthContext) 
    const [review,setReview] = useState([])
 
    useEffect(()=>{
-    fetch(`http://localhost:5000/Orders?email${user?.email}`)
-    .then(res=>res.json())
-    .then(data=>setReview(data))
+    fetch(`http://localhost:5000/Orders?email${user?.email}`,{
+        headers:{
+            authorziation:`Bearer ${localStorage.getItem('doctor-token')}`
+        }
+
+    })
+    .then(res => {
+        if(res.status === 401 || res.status === 403){
+          return 
+        }     
+        return res.json()
+    })
+    
+    .then(data => setReview(data))
    },[user?.email])
 
    const handleDelete=id=>{

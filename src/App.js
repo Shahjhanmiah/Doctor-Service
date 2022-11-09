@@ -71,7 +71,7 @@ function App() {
         },
         {
           path:'/addservice/:id',
-          element:<AddService></AddService>,
+          element:<PrivateRoute><AddService></AddService></PrivateRoute>,
           loader:({params})=> fetch(`http://localhost:5000/Service/${params.id}`)
         },
       ]

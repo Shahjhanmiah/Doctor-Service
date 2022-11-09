@@ -3,13 +3,13 @@ import ServiceCard from '../ServiceCard/ServiceCard';
 
 const Service = () => {
 
-    const [service,Setservice]=useState([])
-    useEffect(()=>{
-        fetch('http://localhost:5000/service')
-        .then(res =>res.json())
-        .then(data =>Setservice(data))
-    },[])
-    const handleshow=()=>{
+    const [service, Setservice] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/Service?route=home')
+            .then(res => res.json())
+            .then(data => Setservice(data))
+    }, [])
+    const handleshow = () => {
         console.log('click')
 
     }
@@ -20,12 +20,14 @@ const Service = () => {
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-20 my-20'>
                 {
-                    service.map(service=><ServiceCard key={service._id} service={service}
-                    handleshow={handleshow}>
+                    service.map(service => <ServiceCard key={service._id} service={service}
+                        handleshow={handleshow}>
 
                     </ServiceCard>)
                 }
-              
+
+                
+
             </div>
         </div>
     );

@@ -5,10 +5,11 @@ const ServiceCardes = () => {
     const handleSubmit=event=>{
         event.preventDefault();
         const form = event.target;
-        const name = `${form.firstName.value} ${form.lastName.value}`;
+        const name = `${form.firstName.value}`;
         const phone = form.phone.value;
         const message = form.message.value;
-        console.log("click");
+        console.log(name,message,phone);
+    
     }
     return (
         <div >
@@ -38,7 +39,7 @@ const ServiceCardes = () => {
         <textarea name="message" className="textarea textarea-bordered h-24 w-full" placeholder="Your Message" required></textarea>
         
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Decription</button>
+          
         </div>
       </div>
     </div>
