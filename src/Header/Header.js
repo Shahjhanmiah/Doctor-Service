@@ -14,19 +14,19 @@ const Header = () => {
       </label>
       <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
       <Link to='/home'>
-     <li><a>Home</a></li>
+     <li>Home</li>
      </Link>
      <Link to='/login'>
-     <li><a>Login</a></li>
+     <li>Login</li>
      </Link>
      <Link to='/blog'>
-     <li><a>Blog</a></li>
+     <li>Blog</li>
      </Link>
-     <Link to='/servicedetails'>
-     <li><a>ServiceDetails</a></li>
+     <Link to='/addservice/:id'>
+     <li>Add service</li>
      </Link>
      <Link to='/myreview'>
-     <li><a>Myreview</a></li>
+     <li>Myreview</li>
      </Link>
         <li tabIndex={0}>
           <ul className="p-2">
@@ -41,19 +41,19 @@ const Header = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
      <Link to='/home'>
-     <li><a>Home</a></li>
+     <li>Home</li>
      </Link>
      <Link to='/login'>
-     <li><a>Login</a></li>
+     <li>Login</li>
      </Link>
      <Link to='/blog'>
-     <li><a>Blog</a></li>
+     <li>Blog</li>
      </Link>
-     <Link to='/servicedetails'>
-     <li><a>servicedetails</a></li>
+     <Link to='/addservice'>
+     <li>Add service</li>
      </Link>
      <Link to='/myreview'>
-     <li><a>Myreview</a></li>
+     <li>Myreview</li>
      </Link>
       <li tabIndex={0}>
         <a>
