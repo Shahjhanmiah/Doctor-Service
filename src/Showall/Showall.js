@@ -16,7 +16,9 @@ const Showall = () => {
 
 
     return (
+       
         <div>
+            
 
            
             <div className='text-center mb-4'>
@@ -35,8 +37,11 @@ const Showall = () => {
                 
             </form>
 
-
+          <div>
+            
+          </div>
         </div>
+        
 
     );
 };

@@ -14,19 +14,23 @@ const Header = () => {
       </label>
       <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
       <Link to='/home'>
-     <li>Home</li>
+     <li><a>Home</a></li>
      </Link>
      <Link to='/login'>
-     <li>Login</li>
+     <li><a>Login</a></li>
+     </Link>
+
+     <Link to='/Addservice'>
+     <li><a>AddService</a></li>
      </Link>
      <Link to='/blog'>
-     <li>Blog</li>
+     <li><a>Blog</a></li>
      </Link>
-     <Link to='/addservice/:id'>
-     <li>Add service</li>
+     <Link to='/servicedetails'>
+     <li><a>ServiceDetails</a></li>
      </Link>
      <Link to='/myreview'>
-     <li>Myreview</li>
+     <li><a>Myreview</a></li>
      </Link>
         <li tabIndex={0}>
           <ul className="p-2">
@@ -41,29 +45,34 @@ const Header = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
      <Link to='/home'>
-     <li>Home</li>
+     <li><a>Home</a></li>
      </Link>
      <Link to='/login'>
-     <li>Login</li>
+     <li><a>Login</a></li>
+     </Link>
+
+     <Link to='/Addservice'>
+     <li><a>AddService</a></li>
      </Link>
      <Link to='/blog'>
-     <li>Blog</li>
+     <li><a>Blog</a></li>
      </Link>
-     <Link to='/addservice'>
-     <li>Add service</li>
+     <Link to='/servicedetails'>
+     <li><a>servicedetails</a></li>
      </Link>
      <Link to='/myreview'>
-     <li>Myreview</li>
+     <li><a>Myreview</a></li>
      </Link>
       <li tabIndex={0}>
         <a>
-          Parent
+          
           <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
         <ul className="p-2">
           
         </ul>
       </li>
+      
     </ul>
   </div>
  
