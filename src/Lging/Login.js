@@ -6,7 +6,7 @@ import { AuthContext } from '../Context/AuthProvider';
 import useTitle from '../hooks/useTitle';
 
 const Login = () => {
-  const { signin, signGoogle } = useContext(AuthContext)
+  const { signin, signGoogle,_id } = useContext(AuthContext)
   useTitle('Login')
   const { user, setUser } = useState()
   const navigate = useNavigate()
@@ -26,7 +26,7 @@ const Login = () => {
           email: user.email
 
         }
-        fetch('http://localhost:5000/jwt', {
+        fetch(' https://server-site-shahjhanmiah.vercel.app/jwt', {
           method: 'POST',
           headers: {
             'content-type': 'application/json'
@@ -52,11 +52,9 @@ const Login = () => {
         console.log(result.user);
         toast.dark('successfullay login!', { autoClose: 500 })
 
-
-
       })
       .catch(error => toast.error(error.message))
-    toast.error('error message!', { autoClose: 500 })
+   
     //  github singin 
 
 
@@ -88,11 +86,9 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input type="password" name='password' placeholder="Your Password" className="input input-bordered" required />
-
               </div>
               <div className="form-control mt-6">
-                <input className="btn btn-warning" type="submit" value="Login"></input>
-
+             <button  type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
               </div>
               <button onClick={handelGoogleSign} type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> <span className='caret-emerald-900 gap-4'><i class="fa-brands fa-google "></i></span> Google your account</button>
             </form>

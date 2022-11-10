@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthProvider';
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
     return (
         <div>
           <div className="navbar bg-base-100 bg-yellow-400">
@@ -17,10 +19,6 @@ const Header = () => {
      <Link to='/login'>
      <li><a>Login</a></li>
      </Link>
-
-     <Link to='/Addservice'>
-     <li><a>AddService</a></li>
-     </Link>
      <Link to='/blog'>
      <li><a>Blog</a></li>
      </Link>
@@ -35,7 +33,7 @@ const Header = () => {
             
           </ul>
         </li>
-        <li><a>Item 3</a></li>
+        
       </ul>
     </div>
     <a className="btn btn-ghost normal-case text-xl">Our Doctor Service</a>
@@ -47,10 +45,6 @@ const Header = () => {
      </Link>
      <Link to='/login'>
      <li><a>Login</a></li>
-     </Link>
-
-     <Link to='/Addservice'>
-     <li><a>AddService</a></li>
      </Link>
      <Link to='/blog'>
      <li><a>Blog</a></li>
@@ -70,7 +64,6 @@ const Header = () => {
           
         </ul>
       </li>
-      <li><a>Item 3</a></li>
     </ul>
   </div>
  

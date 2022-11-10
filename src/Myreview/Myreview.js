@@ -12,7 +12,7 @@ const Myreview = () => {
    const [review,setReview] = useState([])
 
    useEffect(()=>{
-    fetch(`http://localhost:5000/Orders?email${user?.email}`,{
+    fetch(` https://server-site-shahjhanmiah.vercel.app/Orders?email${user?.email}`,{
         headers:{
             authorziation:`Bearer ${localStorage.getItem('doctor-token')}`
         }
@@ -31,7 +31,7 @@ const Myreview = () => {
    const handleDelete=id=>{
     const proceed = window.confirm('are you sure you want to orders delete button')
     if(proceed){
-        fetch(`http://localhost:5000/Orders/${id}`,{
+        fetch(` https://server-site-shahjhanmiah.vercel.app/Orders/${id}`,{
             method:'DELETE'
         })
         .then(res=>res.json())

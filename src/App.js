@@ -15,6 +15,7 @@ import PrivateRoute from './Private/PrivateRoute';
 import Blog from './Blog/Blog';
 import Errorpage from './Errorpage/Errorpage';
 import Myreview from './Myreview/Myreview';
+import Review from './Review/Review';
 
 function App() {
   const router = createBrowserRouter([
@@ -62,17 +63,22 @@ function App() {
         {
           path:'/myreview',
           element:<Myreview></Myreview>,
-          loader:()=> fetch("http://localhost:5000/Service")
+          loader:()=> fetch(" https://server-site-shahjhanmiah.vercel.app/services")
         },
         {
           path:'/servicedetails',
           element:<ServiceDetails></ServiceDetails>,
-          loader:()=> fetch("http://localhost:5000/Service")
+          loader:()=> fetch(" https://server-site-shahjhanmiah.vercel.app/service")
+        },
+        {
+          path:'/review/:id',
+          element:<PrivateRoute><Review></Review></PrivateRoute>,
+          loader:({params})=> fetch(` https://server-site-shahjhanmiah.vercel.app/services/${params.id}`)
         },
         {
           path:'/addservice/:id',
-          element:<PrivateRoute><AddService></AddService></PrivateRoute>,
-          loader:({params})=> fetch(`http://localhost:5000/Service/${params.id}`)
+          element:<AddService></AddService>,
+          loader:({params})=> fetch(` https://server-site-shahjhanmiah.vercel.app/services/${params.id}`)
         },
       ]
 
