@@ -13,7 +13,7 @@ const ServiceCard = ({service}) => {
                     <h2 className="card-title text-white">Name:{name}</h2>
                     <div className="card-actions justify-end">
                      <Link to='/showall'>
-                     <button className="btn btn-primary">ShowAll</button>
+                     <button className="btn btn-primary">Seall</button>
                      </Link>
                     </div>
                 </div>
