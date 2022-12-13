@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link, useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthProvider';
+import CustomerReview from './CustomerReview';
+import Singleriew from '../Review/Singleriew';
 
 const ServiceShowAll = ({service}) => {
+    const {user} = useContext(AuthContext)
+    const [reviews, setReviews] = useState([])
 
     const {img,name,_id} = service
    
@@ -25,6 +30,8 @@ const ServiceShowAll = ({service}) => {
                 <div>
                     
                 </div>
+               
+
             </div>
 
         </div>
